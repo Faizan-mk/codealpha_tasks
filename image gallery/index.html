@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Dreams Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <div class="gallery-container">
+        <header class="gallery-header">
+            <h1 class="neon-text">NEON DREAMS</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search images...">
+                <button id="searchBtn" class="neon-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="filter-tags">
+                <button class="tag active" data-filter="all">All</button>
+                <button class="tag" data-filter="nature">Nature</button>
+                <button class="tag" data-filter="architecture">Architecture</button>
+                <button class="tag" data-filter="abstract">Abstract</button>
+                <button class="tag" data-filter="portrait">Portrait</button>
+            </div>
+        </header>
+
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Images will be loaded here -->
+        </div>
+
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="close-btn" id="closeBtn">&times;</span>
+                <div class="image-container">
+                    <img id="lightboxImg" src="" alt="">
+                    <div class="image-info">
+                        <h3 id="imageTitle">Image Title</h3>
+                        <p id="imageDesc">Image description goes here</p>
+                        <div class="image-meta">
+                            <span id="imageDate">May 23, 2025</span>
+                            <span id="imageLikes">0</span>
+                            <button id="likeBtn" class="like-btn">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lightbox-controls">
+                    <button id="prevBtn" class="nav-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="nextBtn" class="nav-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="particles" id="particles-js"></div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
