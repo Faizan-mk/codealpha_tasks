@@ -1,8 +1,4 @@
-Got it! Here's a clean and professional-looking `README.md` written in **simple and easy wording**, with **no mention of ChatGPT** and no over-styling — perfect for a student or personal GitHub project.
 
----
-
-````markdown
 # Neon Dreams Image Gallery
 
 This is a simple and creative image gallery made using **HTML**, **CSS**, and **JavaScript**. It has a cool neon design, image filtering, search bar, lightbox view, like button, and some smooth animations. The gallery is fully responsive and works on all screen sizes.
